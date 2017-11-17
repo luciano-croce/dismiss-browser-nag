@@ -1,6 +1,6 @@
 1.0.1
 
-Release Date: November 09, 2017
+Release Date: November 13, 2017
 
     Changed plugin name
     Changed plugin description
