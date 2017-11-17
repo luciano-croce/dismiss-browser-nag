@@ -46,7 +46,7 @@ Requires WP:       3.8
 	 * @subpackage Dashboard\Dismiss Browser Update Nag
 	 * @link       https://wordpress.org/plugins/dismiss-browser-nag/ - Plugin hosted on wordpress.org repository
 	 *
-	 * @version    1.0.1 (Build 2017-11-15) Stable
+	 * @version    1.0.1 (Build 2017-11-13) Stable
 	 * @since      1.0.0 (Build 2013-12-12) 1st Release
 	 *
 	 * @author     Luciano Croce <luciano.croce@gmail.com>
@@ -60,7 +60,7 @@ Requires WP:       3.8
  * Prevent direct file access to plugin files
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 if ( !defined( 'ABSPATH' ) ) exit;
@@ -80,7 +80,7 @@ if ( !function_exists( 'add_action' ) )	{
  * Make sure that run under PHP 5.2.4 or greater
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 if ( version_compare( PHP_VERSION, '5.2.4', '<' ) ) {
@@ -95,7 +95,7 @@ add_action( 'admin_init', 'ddwbun_psd_php_version_init', 0 );
  * Show Admin Notice when PHP version not meet minimum requirements requested
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 function ddwbun_ant_php_version_init() {
@@ -121,7 +121,7 @@ else {
  * Make sure that run under WP 3.8+ or greater
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 global $wp_version;
@@ -140,7 +140,7 @@ add_action( 'admin_init', 'ddwbun_psd_wp_version_init', 0 );
  * Show Admin Notice when WP version not meet minimum requirements requested
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 function ddwbun_ant_wp_version_init() {
@@ -166,7 +166,7 @@ else {
  * Load Plugin Textdomain
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 function ddwbun_load_plugin_textdomain() {
@@ -179,13 +179,13 @@ add_filter( 'plugins_loaded', 'ddwbun_load_plugin_textdomain' );
  * Adds Plugin Row Meta Build
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
 */
 function ddwbun_adds_row_meta_build( $plugin_meta, $plugin_file ) {
 	if ( $plugin_file == plugin_basename( __FILE__ ) )
 		{
-			$plugin_meta[ 0 ] .= ' | ' . __( 'Build', 'dismiss-browser-nag' ) . ' ' . __( '2017-11-15', 'dismiss-browser-nag' );
+			$plugin_meta[ 0 ] .= ' | ' . __( 'Build', 'dismiss-browser-nag' ) . ' ' . __( '2017-11-13', 'dismiss-browser-nag' );
 		}
 	return $plugin_meta;
 }
@@ -195,7 +195,7 @@ add_filter( 'plugin_row_meta', 'ddwbun_adds_row_meta_build', 10, 4 );           
  * Adds Plugin Row Meta Links
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
 */
 function ddwbun_adds_row_meta_links( $plugin_meta, $plugin_file ) {
@@ -211,7 +211,7 @@ add_filter( 'plugin_row_meta', 'ddwbun_adds_row_meta_links', 10, 2 );           
  * Adds Plugin Action Links
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
 */
 function ddwbun_adds_action_links( $plugin_meta, $plugin_file ) {
@@ -233,7 +233,7 @@ add_filter( 'network_admin_plugin_action_links_' . plugin_basename( __FILE__ ), 
  * to a specific filter action", and add_action/remove_action as "hooks a function on to a specific action".
  *
  * @author  Luciano Croce <luciano.croce@gmail.com>
- * @version 1.0.1 (Build 2017-11-15)
+ * @version 1.0.1 (Build 2017-11-13)
  * @since   1.0.0 (Build 2013-12-12)
  */
 function dismiss_dashboard_widget_browser_update_nag() {
