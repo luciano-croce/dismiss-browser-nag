@@ -1,1 +1,0 @@
-Dismiss Browser Nag
