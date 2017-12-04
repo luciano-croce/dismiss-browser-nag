@@ -12,7 +12,8 @@ Release Date: November 16, 2017
     Make sure that run under WP 3.2+ or greater
     Work with PHP 5.2.4 to 7.1+ ~ 7.2+
     Make sure that run under PHP 5.2.4 or greater
-    Compatible with MariaDB 5.5+ or 10.0+ or greater
+    Compatible with MySQL 5.5+ and 5.6+ or greater
+    Compatible with MariaDB 5.5+ and 10.0+ or greater
     Compatible with GlotPress translations
     Compatible with load_plugin_textdomain Function
     Compatible with load_muplugin_textdomain Function
